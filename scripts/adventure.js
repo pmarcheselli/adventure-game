@@ -10,6 +10,9 @@ var userY = 0
 var treasureX = 2
 var treasureY = 1
 
+//Flag that starts game
+var myFunction = false
+
 // Flag that controls loop 
 var treasureFound = false
 
