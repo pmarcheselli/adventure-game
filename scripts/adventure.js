@@ -11,7 +11,7 @@ var treasureX = 2
 var treasureY = 1
 
 //Flag that starts game
-var gameStart = false
+var startGame = false
 
 // Flag that controls loop 
 var treasureFound = false
@@ -19,7 +19,7 @@ var treasureFound = false
 // Function to start game on click
 function myFunction() {
   
-  while(!gameStart){
+  while(!startGame){
     // Get user's name
     var name = prompt("Welcome brave adventurer! What are you called?")
     console.log(name)
