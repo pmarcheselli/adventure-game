@@ -20,7 +20,7 @@ var name = prompt("Welcome brave adventurer! What are you called?")
 var gameStart = alert("Ok, " + name + " get ready to play!")
 
 // Function to start game on click
-function onClick() {
+function myFunction() {
   
   while(!treasureFound){
     var direction = prompt("Which direction would you like to go in? (north, south, east, west)")
