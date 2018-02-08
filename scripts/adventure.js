@@ -10,27 +10,19 @@ var userY = 0
 var treasureX = 2
 var treasureY = 1
 
-//Flag that starts game
-var startGame = false
-
 // Flag that controls loop 
-var treasureFound = false
+var treasureFound = false 
+
+// Get user's name
+var name = prompt("Welcome brave adventurer! What are you called?")
 
 // Function to start game on click
 function myFunction() {
   
-  while(!startGame){
-    // Get user's name
-    var name = prompt("Welcome brave adventurer! What are you called?")
-    console.log(name)
-    // Alert user that game will start
-    var readyPlay = alert("Ok, " + name + " get ready to play!")  
-    console.log(readyPlay)
-    gameStart = true;
-  }
   
   while(!treasureFound){
     var direction = prompt("Which direction would you like to go in? (north, south, east, west)")
+
     console.log(direction)
 
     // tmp vars, only used for checking validity of new user location after move
