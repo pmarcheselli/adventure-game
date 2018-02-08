@@ -22,9 +22,11 @@ function myFunction() {
   while(!gameStart){
     // Get user's name
     var name = prompt("Welcome brave adventurer! What are you called?")
-  
+    console.log(name)
     // Alert user that game will start
     var readyPlay = alert("Ok, " + name + " get ready to play!")  
+    console.log(readyPlay)
+    gameStart = true;
   }
   
   while(!treasureFound){
