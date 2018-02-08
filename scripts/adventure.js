@@ -11,19 +11,21 @@ var treasureX = 2
 var treasureY = 1
 
 //Flag that starts game
-var myFunction = false
+var gameStart = false
 
 // Flag that controls loop 
 var treasureFound = false
 
-// Get user's name
-var name = prompt("Welcome brave adventurer! What are you called?")
-
-// Alert user that game will start
-var gameStart = alert("Ok, " + name + " get ready to play!")
-
 // Function to start game on click
 function myFunction() {
+  
+  while(!startGame){
+    // Get user's name
+    var name = prompt("Welcome brave adventurer! What are you called?")
+  
+    // Alert user that game will start
+    var readyPlay = alert("Ok, " + name + " get ready to play!")  
+  }
   
   while(!treasureFound){
     var direction = prompt("Which direction would you like to go in? (north, south, east, west)")
