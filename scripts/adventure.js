@@ -14,15 +14,19 @@ var treasureY = 1
 var treasureFound = false 
 
 // Get user's name
-var name = prompt("Welcome brave adventurer! What are you called?")
+var name = prompt("Welcome brave adventurer! What are you called? (enter your name)")
 console.log(name)
+var ready = prompt("Ok, " + name + " are you ready to start the game? (Yes or No)")
+if(ready = "Yes"){
+  prompt("Let's get started!")
+}else{
+  console.log("Boo, you're no fun!")
+}
 
 // Function to start game on click
 function myFunction() {
   
-  while(!treasureFound){
-    alert("Ok, " + name + " get ready to start the game!")
-    
+  while(!treasureFound){    
     var direction = prompt("Which direction would you like to go in? (north, south, east, west)")
 
     console.log(direction)
@@ -45,7 +49,8 @@ function myFunction() {
         userY = newY
 
       }else {
-       console.log("There is a forbidding mountain range in that direction, you cannot go") 
+       console.log("There is a forbidding mountain range in that direction, you cannot go")
+       alert("There is a forbidding mountain range in that direction, you cannot go")
       }
 
     }else if(direction == "east"){
@@ -57,6 +62,7 @@ function myFunction() {
         userY = newY
       }else {
        console.log("There is a forbidding mountain range in that direction, you cannot go") 
+       alert("There is a forbidding mountain range in that direction, you cannot go")
       }
 
     }else if(direction == "south"){
@@ -67,7 +73,8 @@ function myFunction() {
         userX = newX 
         userY = newY
       }else {
-       console.log("There is a forbidding mountain range in that direction, you cannot go") 
+       console.log("There is a forbidding mountain range in that direction, you cannot go")
+       alert("There is a forbidding mountain range in that direction, you cannot go")
       }
 
     }else if(direction == "west"){
@@ -78,11 +85,13 @@ function myFunction() {
         userX = newX 
         userY = newY
       }else {
-       console.log("There is a forbidding mountain range in that direction, you cannot go") 
+       console.log("There is a forbidding mountain range in that direction, you cannot go")
+       alert("There is a forbidding mountain range in that direction, you cannot go")
       }
 
     }else {
-     console.log("please enter a real direction") 
+     console.log("please enter a real direction")
+     alert("please enter a real direction")
     }
 
     console.log("The user's x is: " + userX)
