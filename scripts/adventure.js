@@ -19,7 +19,7 @@ var treasureFound = false
 // Function to start game on click
 function myFunction() {
   
-  while(!startGame){
+  while(!gameStart){
     // Get user's name
     var name = prompt("Welcome brave adventurer! What are you called?")
   
